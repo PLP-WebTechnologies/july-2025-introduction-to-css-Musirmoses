@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Musa Odhiambo - Front-End Web Developer Portfolio showcasing skills, web projects, and creative work.">
+    <meta name="keywords" content="web developer, portfolio, HTML, CSS, responsive design, SEO, front-end, Musa Odhiambo">
+    <meta name="author" content="Musa Odhiambo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa Odhiambo | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation">
+        <h1 class="logo">Musa Odhiambo</h1>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Creative Front-End Developer</h2>
+            <p>Designing visually stunning and user-friendly websites for brands and individuals.</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate <strong>Front-End Developer</strong> specializing in building clean, responsive, and visually appealing websites. 
+            My journey began with curiosity about how websites work and evolved into a career driven by creativity, problem-solving, and continuous learning.
+        </p>
+        <p>
+            With a background in <strong>journalism and mass communication</strong>, I merge storytelling skills with technical expertise to craft 
+            digital experiences that are both functional and engaging. I value simplicity, accessibility, and user-centered design in every project.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2>Skills & Expertise</h2>
+        <ul>
+            <li><strong>Front-End Development:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>Responsive Design:</strong> Mobile-first approach, Flexbox, CSS Grid</li>
+            <li><strong>Creative Tools:</strong> Canva, Photoshop, Figma</li>
+            <li><strong>Video Production:</strong> Filming, editing, directing for digital media</li>
+            <li><strong>SEO & Content Creation:</strong> Keyword optimization, metadata, structured content</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <img src="images/portfolio.jpg" alt="Portfolio Website Screenshot">
+                <h3>Personal Portfolio Website</h3>
+                <p>A fully responsive personal site showcasing skills, experience, and projects.</p>
+            </div>
+            <div class="card">
+                <img src="images/campaign.jpg" alt="Campaign Website Screenshot">
+                <h3>Non-Profit Campaign Site</h3>
+                <p>Designed a visually impactful site for a disability awareness campaign, boosting engagement by 40%.</p>
+            </div>
+            <div class="card">
+                <img src="images/gallery.jpg" alt="Photography Gallery Screenshot">
+                <h3>Photography Gallery</h3>
+                <p>Interactive gallery with smooth transitions and lightbox viewing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Let’s collaborate to bring your vision to life. Whether it’s a website, campaign, or creative media project, I’d love to hear from you.</p>
+        <p>Email: <a href="mailto:musaodhiambo@gmail.com">musaodhiambo@gmail.com</a></p>
+        <p>Location: Nairobi, Kenya</p>
+        <button class="contact-btn">Send Message</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Musa Odhiambo | Designed with ❤️ | HTML & CSS</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

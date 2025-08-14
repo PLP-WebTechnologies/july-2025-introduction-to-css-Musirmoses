@@ -1,0 +1,241 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #888282, #d9d9d9);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #2c2c2c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid #555;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #bbb;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(44,44,44,0.7), rgba(44,44,44,0.7)), 
+                url('images/hero-bg.jpg') no-repeat center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background: white;
+    color: #2c2c2c;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background: #ddd;
+}
+
+/* Sections */
+.section {
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 1000px;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.about {
+    background-color: #dcdcdc;
+}
+
+.skills {
+    background-color: #e6e6e6;
+}
+
+.projects {
+    background-color: #f2f2f2;
+}
+
+.contact {
+    text-align: center;
+    background-color: #d3d3d3;
+}
+
+/* Projects */
+.project-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    flex: 1 1 calc(33% - 1.5rem);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.8rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Contact Button */
+.contact-btn {
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-btn:hover {
+    background-color: #444;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c2c2c;
+    color: white;
+    border-top: 3px solid #555;
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+   ===================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .project-cards {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    /* Stack nav links vertically */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .hero {
+        height: 70vh;
+        padding: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .project-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    body {
+        font-size: 0.95rem;
+    }
+}
